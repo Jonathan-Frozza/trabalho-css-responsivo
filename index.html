@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>trabalho css responsivo</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+  <div class="container">
+        <button class="menu-toggle" aria-label="Abrir menu">&#9776;</button> 
+        
+  <img class="logo"
+    src="logo200.png"
+    srcset="logo200.png 200w, logo400.png 400w, logo600.png 800w"
+    sizes="(max-width: 600px) 150px, 250px"
+    alt="Agência Criativa Web">
+
+    <nav class="menu">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#sobre">Sobre Nós</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#depoimentos">Depoimentos</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+  <section id="home" class="banner">
+    <div class="container">
+      <h2>Bem-vindo à Agência imaginaria</h2>
+      <p>Transformamos ideias em experiências digitais.</p>
+    </div>
+  </section>
+
+  <section id="sobre" class="sobre">
+    <div class="container">
+      <h2>Sobre Nós</h2>
+      <p>Somos uma agência apaixonada por design, tecnologia e inovação. Acreditamos no poder da criatividade</p>
+    </div>
+  </section>
+
+  <section id="servicos" class="servicos">
+    <div class="container">
+      <h2>Serviços</h2>
+      <div class="grid-servicos">
+        <div class="card">Design Gráfico</div>
+        <div class="card">Desenvolvimento Web</div>
+        <div class="card">Branding</div>
+        <div class="card">Marketing Digital</div>
+        <div class="card">UI/UX Design</div>
+        <div class="card">Consultoria Criativa</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="depoimentos" class="depoimentos">
+    <div class="container">
+      <h2>Depoimentos</h2>
+      <blockquote>
+        "A equipe da Agência imiginaria superou nossas expectativas!" - cleber
+      </blockquote>
+      <blockquote>
+        "Excelência em cada detalhe do projeto!" - claudio
+      </blockquote>
+    </div>
+  </section>
+
+  <section id="contato" class="contato">
+    <div class="container">
+      <h2>Contato</h2>
+      <p>Endereço: Rua Imaginária, 123 - Cidade Criativa</p>
+      <p>Telefone: (11) 1234-5678</p>
+      <p>E-mail: contato@agenciaimaginaria.com</p>
+      <form>
+        <input type="text" placeholder="Nome" required>
+        <input type="email" placeholder="Email" required>
+        <textarea placeholder="Mensagem" required></textarea>
+        <button type="submit">Enviar</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Agência Criativa Web. Todos os direitos reservados.</p>
+    </div>
+  </footer>
+  <script>
+
+  const btnToggle = document.querySelector('.menu-toggle');
+  const menu = document.querySelector('.menu');
+
+  btnToggle.addEventListener('click', () => {
+    menu.classList.toggle('ativo');
+  });
+</script>
+
+</body>
+</html>
